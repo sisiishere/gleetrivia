@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta id="mobile" name="viewport" content="width=640, user-scalable=no" />
+  <meta id="tablet" name="viewport" content="width=768, user-scalable=no" />
+  <meta id="computer" name="viewport" content="width=980, user-scalable=no" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+    rel="stylesheet"
+  />
+    <link
+      rel="stylesheet"
+      href="https://pagecdn.io/lib/font-awesome/5.10.0-12/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <title>Glee Trivia</title>
 </head>
 <body">
@@ -110,8 +140,8 @@
             <img class="Glee" src="http://www.geeksofdoom.com/GoD/img/2015/01/glee-hand-logo.jpg" style="width:200px" style="height:200px">
             <button class ="L">  Sugar Motta </button>
             <img class="Glee" src="http://www.geeksofdoom.com/GoD/img/2015/01/glee-hand-logo.jpg" style="width:200px" style="height:200px">
-            <button class ="Sylvester">  Sue Sylvester </button>
-            <img class="Sue" src="http://images2.fanpop.com/images/photos/8100000/Sue-sue-sylvester-8151725-1772-2560.jpg" style="width:200px" style="height:200px">
+            <button id ="Sylvester">  Sue Sylvester </button>
+            <img id="Sue" src="http://images2.fanpop.com/images/photos/8100000/Sue-sue-sylvester-8151725-1772-2560.jpg" style="width:200px" style="height:200px">
             <br>
             <h3>10: "Argh, I don't understand, I floss between classes!"</h3>
             <br>
@@ -128,8 +158,8 @@
               <br>
                 <button class = "L"> Santana Lopez </button>
                 <img class="Glee" src="http://www.geeksofdoom.com/GoD/img/2015/01/glee-hand-logo.jpg" style="width:200px" style="height:200px">
-                <button class ="Jones"> Mercedes Jones </button>
-                <img class="Mecedes" src="http://images4.fanpop.com/image/photos/16600000/-Mercedes-Jones-glee-16608996-1600-2400.jpg" style="width:200px" style="height:200px">
+                <button id ="Jones"> Mercedes Jones </button>
+                <img id="Mecedes" src="http://images4.fanpop.com/image/photos/16600000/-Mercedes-Jones-glee-16608996-1600-2400.jpg" style="width:200px" style="height:200px">
                 <button class ="L">  Rachel Berry </button>
                 <img class="Glee" src="http://www.geeksofdoom.com/GoD/img/2015/01/glee-hand-logo.jpg" style="width:200px" style="height:200px">
                 <button class ="L">  Kurt Hummel </button>
@@ -420,9 +450,9 @@
                       wins++;
                       displayResults();
                     });
-                    $("#PincheQueen").on("click", function() {
+                    $("#Hummel").on("click", function() {
                       console.log("CLicked");
-                      document.getElementById("PincheQueen").innerHTML = "Don't stop believing!";
+                      document.getElementById("Hummel").innerHTML = "Don't stop believing!";
                       wins++;
                       displayResults();
                     });
